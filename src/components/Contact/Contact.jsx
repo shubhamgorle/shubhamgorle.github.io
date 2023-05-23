@@ -1,12 +1,21 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useRef, useState,useEffect } from "react";
 import "./Contact.css";
+
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
 const Contact = () => {
+  const [name,setname] = useState("")
+  const [email,setemail] = useState("")
+  const [message,setmessage] = useState("")
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false)
+  useEffect(()=>{
+    setname("");
+    setemail("");
+    setmessage("");
+  },[done])
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -21,14 +30,14 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
-          form.reset();
+          // form.reset();
+         
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
-
   return (
     <div className="contact-form" id="contact">
       {/* left side copy and paste from work section */}
@@ -46,9 +55,9 @@ const Contact = () => {
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
+          <input type="text" name="user_name" className="user"  placeholder="Name" value={name} onChange={(e)=>{setname(e.target.value)}} />
+          <input type="email" name="user_email" className="user" placeholder="Email"  value={email} onChange={(e)=>{setemail(e.target.value)}} />
+          <textarea name="message" className="user" placeholder="Message" value={message} onChange={(e)=>{setmessage(e.target.value)}} />
           <input type="submit" value="Send" className="button"/>
           <span>{done && "Thanks for Contacting me"}</span>
           <div

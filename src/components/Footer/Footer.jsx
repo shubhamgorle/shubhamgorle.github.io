@@ -2,19 +2,20 @@ import React from "react";
 import "./Footer.css";
 import Wave from "../../img/wave.png";
 import Insta from "@iconscout/react-unicons/icons/uil-instagram";
-import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
+import Facebook from "@iconscout/react-unicons/icons/uil-linkedin";
 import Gitub from "@iconscout/react-unicons/icons/uil-github";
+import linkedin from '../../img/linkedin.png'
 
 const Footer = () => {
   return (
     <div className="footer">
       <img src={Wave} alt="" style={{ width: "100%" }} />
       <div className="f-content">
-        <span>shubhamgorle.me@sbjit.edu.in</span>
+        <span id="contact-email">shubhamgorle.me@sbjit.edu.in</span>
         <div className="f-icons">
-          <Gitub color="white" size={"3rem"} />
-          <Insta color="white" size={"3rem"} />
-          <Facebook color="white" size={"3rem"} />
+       <a href="https://github.com/shubhamgorle" id="contact-github"> <Gitub color="white" size={"3rem"} /></a>  
+       <a href="https://www.linkedin.com/in/shubham-gorle/" id="contact-linkedin"> <Facebook color="white" size={"3rem"} /></a>  
+       <a href="https://www.instagram.com/shubh_am09/?next=%2F" id="contact-phone"><Insta color="white" size={"3rem"} /></a>    
         </div>
       </div>
     </div>

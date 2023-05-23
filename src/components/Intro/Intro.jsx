@@ -9,6 +9,7 @@ import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
+import userphoto from '../../img/userphoto1.png'
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -22,14 +23,14 @@ const Intro = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="Intro" id="Intro">
+    <div className="Intro" id="Intro home">
       {/* left name side */}
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Shubham Gorle</span>
-          <span>
+          <span id="user-detail-name">Shubham Gorle</span>
+          <span  id="user-detail-intro">
             Logical and results-driven MERN stack developer dedicated to building and optimizing<br/>
             user-focused websites and applications
           </span>
@@ -47,7 +48,7 @@ const Intro = () => {
       {/* right image side */}
       <div className="i-right">
         <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
+        <img src={userphoto} alt=""  class="home-img"/>
         {/* <img src={shubham} alt="" /> */}
         {/* animation */}
         <motion.img

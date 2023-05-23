@@ -1,11 +1,8 @@
 import React, { useContext } from "react";
 import "./Services.css";
-// import Card from "../Card/Card";
-// import HeartEmoji from "../../img/heartemoji.png";
-// import Glasses from "../../img/glasses.png";
-// import Humble from "../../img/humble.png";
+
 import { themeContext } from "../../Context";
-// import { motion } from "framer-motion";
+
 import Resume from './resume.pdf';
 
 const Services = () => {
@@ -13,14 +10,9 @@ const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  // transition
-  // const transition = {
-  //   duration: 1,
-  //   type: "spring",
-  // };
 
   return (
-    <div className="services" id="services">
+    <div className="services" id="services about section">
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
@@ -31,8 +23,8 @@ const Services = () => {
         I am enthusiastic about exploring new technologies and frameworks, and I am excited to learn and work.<br/>
         with new tools in order to deliver out of the box solution with complete ownership.
         </span>
-        <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
+        <a href={Resume} download style={{width:"8rem"}}>
+          <button className="button s-button"  id="resume-button-2">Download CV</button>
         </a>
       
       </div>

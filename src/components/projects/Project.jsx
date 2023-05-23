@@ -47,22 +47,22 @@ const Projects = () => {
             <h1 style={{fontSize:"2.5rem", fontWeight:"bold",textAlign:"center", color: darkMode ? "white" : "" }}>Projects</h1>
             <div className='projectsContainer'>
                 {projects.map((ele, index) => (
-                    <div key={index} className="box" style={{border: "7px solid #fca61f"}}>
+                    <div key={index} class="project-card" className="box" style={{border: "7px solid #fca61f"}}  >
                         <div className='imgBox'>
                             <img src={ele.img} alt={ele.title} width='100%' />
                         </div>
                         <div className='ContentBox'>
-                            <h1 >{ele.title}</h1>
-                            <p style={{fontSize:"18px"}}>{ele.desc}</p>
+                            <h1 class="project-title" >{ele.title}</h1>
+                            <p class="project-description" style={{fontSize:"18px"}}>{ele.desc}</p>
                             <p style={{ fontWeight: 'bold',fontSize:"14px" }}>{ele.worked}</p>
-                            <div className='tagsBox'>
+                            <div class="project-tech-stack"  className='tagsBox'>
                                 {ele.tags.map((tag, index) => (
                                     <span key={index}>{tag}</span>
                                 ))}
                             </div>
                             <div className='linkSection'>
-                                {ele.githubLink && <a href={ele.githubLink} target='_blank' rel='noreferrer'><button><GitHubIcon />Github</button></a>}
-                                <a href={ele.deployedLink} target='_blank' rel='noreferrer'><button><StreamIcon />Live</button></a>
+                                {ele.githubLink && <a href={ele.githubLink} target='_blank' rel='noreferrer'  class="project-github-link"><button><GitHubIcon />Github</button></a>}
+                                <a href={ele.deployedLink} target='_blank' rel='noreferrer' class="project-deployed-link"><button><StreamIcon />Live</button></a>
                             </div>
                         </div>
                     </div>

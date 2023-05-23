@@ -53,7 +53,7 @@ const Skills = () => {
     ]
 
   return (
-    <div className="skill1" >
+    <div className="skill1" id='skills'>
          <div style={{height:"40px"}}></div>
       <span style={{ color: darkMode ? "white" : "" ,textAlign:"center"}}  id='skillspan'>Skills</span>
       <div className="blur t-blur1" style={{ background: "var(--purple)"}}></div>
@@ -62,9 +62,9 @@ const Skills = () => {
           <Container id='skills'>
         <div className='skillsContainer'>
             {skills.map((ele,index)=>(
-                <div key={index}>
-                    <img src={ele.img} alt={ele.title} width='70px' height='70px'/>
-                    <p>{ele.title}</p>
+                <div key={index}  class="skills-card">
+                    <img src={ele.img} alt={ele.title} width='70px' height='70px' class="skills-card-img"/>
+                    <p class="skills-card-name">{ele.title}</p>
                 </div>
             ))}
         </div>

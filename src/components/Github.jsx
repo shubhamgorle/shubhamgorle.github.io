@@ -1,4 +1,3 @@
-
 import React from 'react'
 import styled from 'styled-components';
 import GithubCalendar from 'react-github-calendar'
@@ -14,12 +13,14 @@ const Github = () => {
     margin-left: 45%; */}
             <h1 style={{ color: darkMode ? "white" : "" ,fontSize:"2.5rem",fontWeight:"bold",textAlign:'center'}}>Days I Worked</h1>
             <Container>
-                <GithubCalendar username='shubhamgorle' year={new Date().getFullYear()} blockSize={15} blockMargin={5} fontSize={16} />
+                <GithubCalendar username='shubhamgorle' year={new Date().getFullYear()} blockSize={15} blockMargin={5} fontSize={16}  class="react-activity-calendar"/>
             </Container>
             <h1 style={{ color: darkMode ? "white" : "" ,fontSize:"2.5rem",fontWeight:"bold",textAlign:'center' }}>My Statistics</h1>
+           
             <div className='stats'>
-                <img align="center" src="https://github-readme-stats.vercel.app/api?username=shubhamgorle&show_icons=true&locale=en&include_all_commits=false&count_private=true" alt="shubhamgorle" />
-                <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shubhamgorle&" alt="shubhamgorle" />
+            <img id="github-top-langs" align="center"src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubhamgorle&layout=compact&bg_color=FFFFFF00&hide_border=false&text_color=6d6b6b&title_color=6d6b6b" alt="shubhamgorle" />
+                <img  id="github-top-langs" align="center" src="https://github-readme-stats.vercel.app/api?username=shubhamgorle&show_icons=true&locale=en&include_all_commits=false&count_private=true" alt="shubhamgorle" />
+                <img id="github-stats-card" align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shubhamgorle&" alt="shubhamgorle" />
             </div>
         </MainContainer>
     )

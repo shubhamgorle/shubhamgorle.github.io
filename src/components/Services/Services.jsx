@@ -22,7 +22,7 @@ const Services = () => {
         <span id="user-detail-intro">
         I am a full stack web developer with a passion for learning and growing in the field of web development.<br/>
         I am enthusiastic about exploring new technologies and frameworks, and I am excited to learn and work.<br/>
-        with new tools in order to deliver out of the box solution with complete ownership. HTML, CSS Javascript,react
+        with new tools in order to deliver out of the box solution with complete ownership.
         </span>
         <a href={Resume} download style={{width:"8rem"}}>
           <button className="button s-button"  id="resume-button-2">Download CV</button>

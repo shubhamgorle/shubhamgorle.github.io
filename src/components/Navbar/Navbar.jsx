@@ -42,9 +42,6 @@ const darkMode = theme.state.darkMode;
                 Projects
               </Link>
             </li>
-            <li>
-            <a target="_blank" rel="noreferrer" href={resume} download={resume} id="resume-button-1"  class="nav-link resume" style={{textDecoration:"none", color: darkMode ? "white" : "black" }}>Resume</a>
-            </li>
           </ul>
         </div>
         <Link to="contact" spy={true} smooth={true} class="nav-link contact">

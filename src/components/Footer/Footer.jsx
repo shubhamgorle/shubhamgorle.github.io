@@ -17,7 +17,7 @@ const Footer = () => {
        <a href="https://github.com/shubhamgorle" id="contact-github"> <Gitub color="white" size={"3rem"} /></a>  
        <a href="https://www.linkedin.com/in/shubham-gorle/" id="contact-linkedin"> <Facebook color="white" size={"3rem"} /></a>  
        <a href="https://www.instagram.com/shubh_am09/?next=%2F"><Insta color="white" size={"3rem"} /></a>    
-       <a href="tel:+919359292560" id="contact-phone"><Phone color="white" size={"3rem"} />Call me</a>    
+       <a href="tel:+919359292560" id="contact-phone"><Phone color="white" size={"3rem"} /></a>    
         </div>
       </div>
     </div>

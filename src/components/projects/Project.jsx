@@ -40,16 +40,6 @@ const Projects = () => {
             deployedLink: 'https://koonew.netlify.app/',
             tags:  ["React", "Redux", "JavaScript", "ChakraUi", "CSS"]
         }
-        , {
-            id: 4,
-            title: 'Koo-Clone',
-            img: koo,
-            desc: 'Koo is a microblogging platform that is popular in India. It allows users to post short updates, similar to Twitter.',
-            worked: 'A collaborative project, built in 4 days by a team of 4 developers.',
-            githubLink: 'https://github.com/shubhamgorle/kooapp_clonee',
-            deployedLink: 'https://koonew.netlify.app/',
-            tags:  ["React", "Redux", "JavaScript", "ChakraUi", "CSS"]
-        }
     ]
    
     return (
@@ -59,7 +49,7 @@ const Projects = () => {
                 {projects.map((ele, index) => (
                     <div key={index} className="project-card box"  style={{border: "7px solid #fca61f"}}  >
                         <div className='imgBox'>
-                            <img src={ele.img} alt={ele.title} width='100%' />
+                            <img src={ele.img} alt={ele.title} width='100%' style={{padding:"15px"}}/>
                         </div>
                         <div className='ContentBox'>
                             <h1 class="project-title" >{ele.title}</h1>
@@ -71,8 +61,8 @@ const Projects = () => {
                                 ))}
                             </div>
                             <div className='linkSection'>
-                                {ele.githubLink && <a href={ele.githubLink} target='_blank' rel='noreferrer'  class="project-github-link"><button><GitHubIcon />Github</button></a>}
-                                <a href={ele.deployedLink} target='_blank' rel='noreferrer' class="project-deployed-link"><button><StreamIcon />Live</button></a>
+                                {ele.githubLink && <a href={ele.githubLink} target='_blank' rel='noreferrer'  class="project-github-link"><button style={{backgroundColor:"#fca61f"}}><GitHubIcon />Github</button></a>}
+                                <a href={ele.deployedLink} target='_blank' rel='noreferrer' class="project-deployed-link"><button style={{backgroundColor:"#fca61f"}}><StreamIcon />Live</button></a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +101,7 @@ const Container = styled.div`
         border-radius: 20px;
         overflow:hidden;
     }
-
+   
     .imgBox{
         width:50%;
         overflow:hidden;

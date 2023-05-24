@@ -40,6 +40,16 @@ const Projects = () => {
             deployedLink: 'https://koonew.netlify.app/',
             tags:  ["React", "Redux", "JavaScript", "ChakraUi", "CSS"]
         }
+        , {
+            id: 4,
+            title: 'Koo-Clone',
+            img: koo,
+            desc: 'Koo is a microblogging platform that is popular in India. It allows users to post short updates, similar to Twitter.',
+            worked: 'A collaborative project, built in 4 days by a team of 4 developers.',
+            githubLink: 'https://github.com/shubhamgorle/kooapp_clonee',
+            deployedLink: 'https://koonew.netlify.app/',
+            tags:  ["React", "Redux", "JavaScript", "ChakraUi", "CSS"]
+        }
     ]
    
     return (
@@ -47,7 +57,7 @@ const Projects = () => {
             <h1 style={{fontSize:"2.5rem", fontWeight:"bold",textAlign:"center", color: darkMode ? "white" : "" }}>Projects</h1>
             <div className='projectsContainer'>
                 {projects.map((ele, index) => (
-                    <div key={index} class="project-card" className="box" style={{border: "7px solid #fca61f"}}  >
+                    <div key={index} className="project-card box"  style={{border: "7px solid #fca61f"}}  >
                         <div className='imgBox'>
                             <img src={ele.img} alt={ele.title} width='100%' />
                         </div>

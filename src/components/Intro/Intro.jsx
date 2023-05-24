@@ -30,7 +30,7 @@ const Intro = () => {
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span id="user-detail-name">Shubham Gorle</span>
-          <span  id="user-detail-intro">
+          <span  >
             Logical and results-driven MERN stack developer dedicated to building and optimizing<br/>
             user-focused websites and applications
           </span>

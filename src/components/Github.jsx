@@ -19,12 +19,12 @@ const Github = () => {
            
             <div className='stats'>
             <img id="github-top-langs" align="center"src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubhamgorle&layout=compact&bg_color=FFFFFF00&hide_border=false&text_color=6d6b6b&title_color=6d6b6b" alt="shubhamgorle" />
-                <img  id="github-top-langs" align="center" src="https://github-readme-stats.vercel.app/api?username=shubhamgorle&show_icons=true&locale=en&include_all_commits=false&count_private=true" alt="shubhamgorle" />
-                <img id="github-stats-card" align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shubhamgorle&" alt="shubhamgorle" />
+                <img  id="github-stats-card" align="center" src="https://github-readme-stats.vercel.app/api?username=shubhamgorle&show_icons=true&locale=en&include_all_commits=false&count_private=true" alt="shubhamgorle" />
+                <img id="github-streak-stats" align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=shubhamgorle&" alt="shubhamgorle" />
             </div>
         </MainContainer>
     )
-
+   
 }
 
 const Container = styled.div`

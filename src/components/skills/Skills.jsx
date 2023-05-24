@@ -51,7 +51,7 @@ const Skills = () => {
             title:'MERN'
         }
     ]
-
+  
   return (
     <div className="skill1" id='skills'>
          <div style={{height:"40px"}}></div>

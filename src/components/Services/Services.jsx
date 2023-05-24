@@ -10,8 +10,9 @@ const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-
+  
   return (
+    <div  id="about" class="about section">
     <div className="services" id="services about section">
       {/* left side */}
       <div className="awesome">
@@ -29,6 +30,7 @@ const Services = () => {
       
       </div>
       {/* right */}
+    </div>
     </div>
   );
 };

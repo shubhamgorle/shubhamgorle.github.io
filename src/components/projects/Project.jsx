@@ -41,7 +41,7 @@ const Projects = () => {
             tags:  ["React", "Redux", "JavaScript", "ChakraUi", "CSS"]
         }
     ]
-
+   
     return (
         <Container id='projects' className='projects'>
             <h1 style={{fontSize:"2.5rem", fontWeight:"bold",textAlign:"center", color: darkMode ? "white" : "" }}>Projects</h1>

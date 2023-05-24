@@ -21,9 +21,9 @@ const Intro = () => {
   // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
+  // id="home"
   return (
-    <div className="Intro" id="Intro home">
+    <div className="Intro" id="home">
       {/* left name side */}
       <div className="i-left">
         <div className="i-name">

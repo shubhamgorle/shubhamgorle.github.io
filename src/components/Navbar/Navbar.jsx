@@ -9,7 +9,8 @@ const Navbar = () => {
 const theme = useContext(themeContext);
 const darkMode = theme.state.darkMode;
   return (
-    <div className="n-wrapper" id="Navbar nav-menu">
+    <div id="nav-menu">
+    <div className="n-wrapper" id="Navbar">
       {/* left */}
       <div className="n-left">
         <div className="n-name">Shubham</div>
@@ -50,6 +51,7 @@ const darkMode = theme.state.darkMode;
         <button className="button n-button">Contact</button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };

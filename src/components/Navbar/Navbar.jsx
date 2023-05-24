@@ -20,23 +20,23 @@ const darkMode = theme.state.darkMode;
       <div className="n-right">
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
-            <li class="nav-link home">
+            <li className="nav-link home">
               <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
                 Home
               </Link>
             </li>
-            <li class="nav-link about">
+            <li className="nav-link about">
               <Link to="services" spy={true} smooth={true}>
               About
               </Link>
             </li>
           
-            <li  class="nav-link skills">
+            <li  className="nav-link skills">
                <Link to="skill1" spy={true} smooth={true}>
               Skills
               </Link>
             </li>
-            <li class="nav-link projects">
+            <li className="nav-link projects">
             {/* portfolio */}
               <Link to="projects" spy={true} smooth={true}>
                 Projects

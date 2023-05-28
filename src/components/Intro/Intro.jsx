@@ -42,7 +42,7 @@ const Intro = () => {
         <div className="i-icons">
           <a href="https://github.com/shubhamgorle"><img src={Github} alt="" /></a>
           <a href="https://www.linkedin.com/in/shubham-gorle/"><img src={LinkedIn} alt="" /></a>
-          <a href=""><img src={Instagram} alt="" /></a>
+          <a href="https://www.instagram.com/shubh_am09/?next=%2F"><img src={Instagram} alt="" /></a>
         </div>
       </div>
       {/* right image side */}

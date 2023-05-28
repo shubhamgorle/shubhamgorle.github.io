@@ -47,9 +47,9 @@ const Projects = () => {
             <h1 style={{fontSize:"2.5rem", fontWeight:"bold",textAlign:"center", color: darkMode ? "white" : "" }}>Projects</h1>
             <div className='projectsContainer'>
                 {projects.map((ele, index) => (
-                    <div key={index} className="project-card box"  style={{border: "7px solid #fca61f"}}  >
+                    <div key={index} className="project-card box"  style={{boxShadow:'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}  >
                         <div className='imgBox'>
-                            <img src={ele.img} alt={ele.title} width='100%' style={{padding:"15px"}}/>
+                            <img src={ele.img} alt={ele.title} width='100%' />
                         </div>
                         <div className='ContentBox'>
                             <h1 class="project-title" >{ele.title}</h1>

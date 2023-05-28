@@ -12,7 +12,7 @@ const Github = () => {
     font-weight: bold;
     margin-left: 45%; */}
             <h1 style={{ color: darkMode ? "white" : "" ,fontSize:"2.5rem",fontWeight:"bold",textAlign:'center'}}>Days I Worked</h1>
-            <Container>
+            <Container id='container123'>
                 <GithubCalendar username='shubhamgorle' year={new Date().getFullYear()} blockSize={15} blockMargin={5} fontSize={16}  class="react-activity-calendar"/>
             </Container>
             <h1 style={{ color: darkMode ? "white" : "" ,fontSize:"2.5rem",fontWeight:"bold",textAlign:'center' }}>My Statistics</h1>
@@ -35,7 +35,7 @@ const Container = styled.div`
     justify-content:center;
     margin-bottom:50px;
     flex-direction:column;
-    border: 7px solid var(--orange);
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius:50px 5px 50px 5px;
     padding:30px 10px 30px 10px;
 `
@@ -74,6 +74,7 @@ const MainContainer = styled.div`
             width:90%;
             flex-direction:column; 
         }
+
     }
 
     @media only screen and (max-width: 319px){

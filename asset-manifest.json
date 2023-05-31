@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.bdd229e1.css",
-    "main.js": "/static/js/main.2c96f426.js",
+    "main.js": "/static/js/main.f56f8566.js",
     "static/media/expendia.png": "/static/media/expendia.86c5bef8cc77820057fe.png",
     "static/media/shop.png": "/static/media/shop.b1cb9377ac0f77dbec18.png",
     "static/media/kooApp.png": "/static/media/kooApp.e8f04f0e1e1d8cf14992.png",
     "static/media/userphoto1.png": "/static/media/userphoto1.c1f3e597bd76e9393567.png",
-    "static/media/resume.pdf": "/static/media/resume.52034786bb35ff0a5d62.pdf",
+    "static/media/resume.pdf": "/static/media/resume.fafa3ff310b84e075e98.pdf",
     "static/media/react.png": "/static/media/react.22d1f2096ed82cab7a8a.png",
     "static/media/mongodb.png": "/static/media/mongodb.4f7af09e6354d51beec8.png",
     "static/media/glassesimoji.png": "/static/media/glassesimoji.a08bdab12e8eb56a6874.png",
@@ -23,10 +23,10 @@
     "static/media/mern.png": "/static/media/mern.b58d81727b47466a7cda.png",
     "index.html": "/index.html",
     "main.bdd229e1.css.map": "/static/css/main.bdd229e1.css.map",
-    "main.2c96f426.js.map": "/static/js/main.2c96f426.js.map"
+    "main.f56f8566.js.map": "/static/js/main.f56f8566.js.map"
   },
   "entrypoints": [
     "static/css/main.bdd229e1.css",
-    "static/js/main.2c96f426.js"
+    "static/js/main.f56f8566.js"
   ]
 }

@@ -3,14 +3,16 @@ import "./Services.css";
 
 import { themeContext } from "../../Context";
 
-import Resume from './resume.pdf';
+import Resume from './Shubham-Gorle-Resume.pdf';
 
 const Services = () => {
   // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  
+  const handleResumeLink = ()=>{
+    window.open(Resume, "_blank")
+  }
   return (
     <div  id="about" class="about section">
     <div className="services" id="services about section">
@@ -21,10 +23,10 @@ const Services = () => {
         <span></span>
         <span id="user-detail-intro">
         I am a full stack web developer with a passion for learning and growing in the field of web development.<br/>
-        I am enthusiastic about exploring new technologies and frameworks, and I am excited to learn and work.<br/>
+        I am enthusiastic about exploring new technologies and frameworks, and I am excited to learn and work<br/>
         with new tools in order to deliver out of the box solution with complete ownership.
         </span>
-        <a href={Resume} download style={{width:"8rem"}}>
+        <a href={Resume} download style={{width:"8rem"}} onClick={handleResumeLink}>
           <button className="button s-button"  id="resume-button-2">Download CV</button>
         </a>
       

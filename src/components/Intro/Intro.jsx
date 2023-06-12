@@ -40,9 +40,9 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <a href="https://github.com/shubhamgorle"><img src={Github} alt="" /></a>
-          <a href="https://www.linkedin.com/in/shubham-gorle/"><img src={LinkedIn} alt="" /></a>
-          <a href="https://www.instagram.com/shubh_am09/?next=%2F"><img src={Instagram} alt="" /></a>
+          <a href="https://github.com/shubhamgorle"  target="_blank"  rel="noreferrer"><img src={Github} alt="" /></a>
+          <a href="https://www.linkedin.com/in/shubham-gorle/" target="_blank"  rel="noreferrer"><img src={LinkedIn} alt="" /></a>
+          <a href="https://www.instagram.com/shubh_am09/?next=%2F" target="_blank"  rel="noreferrer"><img src={Instagram} alt="" /></a>
         </div>
       </div>
       {/* right image side */}

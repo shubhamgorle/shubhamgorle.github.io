@@ -1,10 +1,12 @@
 .n-wrapper {
-  height: 10vh;
+  height: 7vh;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  align-items: center;
+ 
   top: 0;
 }
+
 .n-left {
   flex: 1;
   align-items: center;
@@ -41,10 +43,130 @@
 
 .n-button {
   flex: 2;
+  margin-right: 40px;
 }
-
+#nav-menu{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 5px 5px;
+}
+.darknavbar{
+  background-color: black;
+}
+.hide{
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
 @media screen and (max-width: 480px) {
   .n-list {
     display: none;
   }
 }
+/* #nav-menu{
+  background: var(--brown-red);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  align-items: center;
+  height: auto;
+  padding: 10px 15px;
+}
+#logo-nav{
+  flex-grow: 1;
+  margin:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo-nav h1{
+  font-weight: 700;
+  color: var(--light-red);
+  font-size: 30px;
+}
+.contact-button.resume-button{
+  padding: 7px;
+  font-size: 20px;
+  margin: 0;
+  align-self: flex-end;
+  border:none;
+}
+.ham-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ham{
+  font-size: 25px;
+  margin: 0 0 0 10px;
+  width: 30px;
+  text-align: center;
+  transition: all .5s;
+}
+ham i{
+  font-size: 25px;
+}
+#nav-menu ul{
+  font-size: 20px;
+  text-align: center;
+  transition: all .3s;
+} */
+/* .hide{
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.display-none{
+  display: none;
+}
+#nav-menu li{
+  margin: 30px 10px;
+  list-style: none;
+  cursor: pointer;
+  transition: all .4s;
+  padding: 7px;
+}
+#nav-menu li:hover{
+  color: var(--light-red);
+}
+.first-btn{
+  display: inline-block;
+}
+.second-btn{
+  display: none;
+} */
+/* @media screen and (min-width:800px){
+  .first-btn{
+    display: none;
+  }
+  .second-btn{
+    display: inline-block;
+  }
+  .resume-button.second-btn{
+    margin: auto 0;
+  }
+  #nav-menu{
+    display: flex;
+  }
+  #nav-menu li{
+    margin: 0 10px;
+  }
+  #logo-nav{
+    flex-grow: 1;
+    text-align: left; 
+    margin-bottom: 0;
+  }
+  #nav-menu ul{
+    display: flex;
+    margin-bottom: 0;
+  }
+  .hide{
+    height: auto;
+    opacity: 1;
+  }
+  .ham{
+    display: none;
+  }
+} */
+/* Navbar */

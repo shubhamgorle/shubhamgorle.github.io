@@ -1,7 +1,11 @@
 import React from 'react';
+
+// import { ChakraProvider } from '@chakra-ui/react'
 import ReactDOM from 'react-dom';
 import App from './App';
 import { ThemeProvider } from './Context';
+// import {ChakraProvider} from '@chakra-ui/react'
+
 
 ReactDOM.render(
   <ThemeProvider>

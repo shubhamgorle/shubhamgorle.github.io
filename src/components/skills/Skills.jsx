@@ -13,6 +13,11 @@ import mern from '../../img/mern.png'
 import './skills.css'
 import { useContext } from 'react'
 import { themeContext } from '../../Context'
+import vscode from '../../img/vscode.webp'
+import postman from '../../img/postman-icon.png'
+import github from '../../img/githubb.png'
+import vite from '../../img/vite.png'
+// vs code postmen git vite aws
 // #e9e9e9;
 const Skills = () => {
     const theme = useContext(themeContext);
@@ -51,8 +56,26 @@ const Skills = () => {
             title:'MERN'
         }
     ]
-  
+  const tools = [
+    {
+        img:vscode,
+        title:'VS Code'
+    },
+    {
+        img:postman,
+        title:'Postman'
+    },
+    {
+        img:github,
+        title:'github'
+    },
+    {
+        img:vite,
+        title:'Vite'
+    }
+  ]
   return (
+    <>
     <div className="skill1" id='skills'>
          <div style={{height:"40px"}}></div>
       <span style={{ color: darkMode ? "white" : "" ,textAlign:"center"}}  id='skillspan'>Skills</span>
@@ -70,7 +93,26 @@ const Skills = () => {
         </div>
     </Container>
     </div>
-  
+
+
+    <div className="skill1" id='skills'>
+         <div style={{height:"40px"}}></div>
+      <span style={{ color: darkMode ? "white" : "" ,textAlign:"center"}}  id='skillspan'>Tools</span>
+      <div className="blur t-blur1" style={{ background: "var(--purple)"}}></div>
+      <div className="blur t-blur2" style={{ background: "skyblue" }}></div> 
+      <div style={{height:"80px"}}></div>
+          <Container id='skills'>
+        <div className='skillsContainer'>
+            {tools.map((ele,index)=>(
+                <div key={index}  class="skills-card">
+                    <img src={ele.img} alt={ele.title} width='70px' height='70px' class="skills-card-img"/>
+                    <p class="skills-card-name">{ele.title}</p>
+                </div>
+            ))}
+        </div>
+    </Container>
+    </div>
+    </>
   )
 }
 

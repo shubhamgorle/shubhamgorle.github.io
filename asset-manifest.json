@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.93996b57.css",
-    "main.js": "/static/js/main.d1fd8b75.js",
+    "main.css": "/static/css/main.284cdf6e.css",
+    "main.js": "/static/js/main.ea3baa5d.js",
     "static/media/expendia.png": "/static/media/expendia.86c5bef8cc77820057fe.png",
     "static/media/shop.png": "/static/media/shop.b1cb9377ac0f77dbec18.png",
     "static/media/kooApp.png": "/static/media/kooApp.e8f04f0e1e1d8cf14992.png",
     "static/media/userphoto1.png": "/static/media/userphoto1.c1f3e597bd76e9393567.png",
     "static/media/githubb.png": "/static/media/githubb.bd8bb4d8d3e5d87f2c75.png",
-    "static/media/Shubham-Gorle-Resume.pdf": "/static/media/Shubham-Gorle-Resume.8059218d653d0c9b9948.pdf",
+    "static/media/Shubham-Gorle-Resume.pdf": "/static/media/Shubham-Gorle-Resume.8b302c917a634fcbfa5b.pdf",
     "static/media/vite.png": "/static/media/vite.57209664603f0c8ceb0f.png",
     "static/media/react.png": "/static/media/react.22d1f2096ed82cab7a8a.png",
     "static/media/mongodb.png": "/static/media/mongodb.4f7af09e6354d51beec8.png",
@@ -25,11 +25,11 @@
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "static/media/mern.png": "/static/media/mern.b58d81727b47466a7cda.png",
     "index.html": "/index.html",
-    "main.93996b57.css.map": "/static/css/main.93996b57.css.map",
-    "main.d1fd8b75.js.map": "/static/js/main.d1fd8b75.js.map"
+    "main.284cdf6e.css.map": "/static/css/main.284cdf6e.css.map",
+    "main.ea3baa5d.js.map": "/static/js/main.ea3baa5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.93996b57.css",
-    "static/js/main.d1fd8b75.js"
+    "static/css/main.284cdf6e.css",
+    "static/js/main.ea3baa5d.js"
   ]
 }

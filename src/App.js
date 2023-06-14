@@ -11,7 +11,7 @@ import Projects from "./components/projects/Project";
 import { useContext,useState,useEffect } from "react";
 import { themeContext } from "./Context";
 import Github from "./components/Github";
-
+import PraciceNav from "./components/PraciceNav";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;

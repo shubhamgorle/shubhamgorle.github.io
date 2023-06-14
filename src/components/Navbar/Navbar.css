@@ -54,13 +54,21 @@
 .darknavbar{
   background-color: black;
 }
-.hide{
+/* .hide{
   height: 0;
   opacity: 0;
   overflow: hidden;
-}
+} */
 @media screen and (max-width: 480px) {
   .n-list {
+    display: none;
+  }
+  #hamburger_iconr{
+    display: block;
+  }
+}
+@media screen and (min-width:820px){
+  #hamburger_icon{
     display: none;
   }
 }

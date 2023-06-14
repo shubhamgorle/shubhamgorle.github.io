@@ -1,12 +1,25 @@
 import React from "react";
 import resume from '../Services/Shubham-Gorle-Resume.pdf'
 import Toggle from "../Toggle/Toggle";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import { useContext } from "react";
 import { themeContext } from "../../Context";
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
+
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+} from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
 const Navbar = ({ handleClick, boolean }) => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -48,16 +61,53 @@ const Navbar = ({ handleClick, boolean }) => {
                   Projects
                 </Link>
               </li>
-              <li>    
-                 <Link to="contact" spy={true} smooth={true} class="nav-link contact">
-                Contact
-              </Link>
+              <li>
+                <Link to="contact" spy={true} smooth={true} class="nav-link contact">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
-          <a href={resume} download style={{ width: "6rem",padding:'-6rem -2rem' }} onClick={handleResumeLink} >
-                <button className="button">Resume</button>
-              </a>
+          <a href={resume} download style={{ width: "6rem", padding: '-6rem -2rem' }} onClick={handleResumeLink} >
+            <button className="button">Resume</button>
+          </a>
+          <div id="hamburger_icon">
+            <Menu >
+              <MenuButton
+                as={IconButton}
+                // aria-label='Options'
+                icon={<HamburgerIcon />}
+                variant='outline'
+                className="button"/>
+               
+              <MenuList style={{color:darkMode ? 'black':"black"}}>
+                <MenuItem >
+                  <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+                    Home
+                  </Link>
+                </MenuItem>
+                <MenuItem >
+                  <Link to="services" spy={true} smooth={true}>
+                    About
+                  </Link>
+                </MenuItem>
+                <MenuItem >
+                  <Link to="skill1" spy={true} smooth={true}>
+                    Skills
+                  </Link>
+                </MenuItem>
+                <MenuItem >
+                  <Link to="projects" spy={true} smooth={true}>
+                    Projects
+                  </Link>
+                </MenuItem>
+                <MenuItem >
+                  <Link to="contact" spy={true} smooth={true} class="nav-link contact">
+                    Contact
+                  </Link>
+                </MenuItem>
+              </MenuList>
+            </Menu></div>
         </div>
       </div>
     </div>

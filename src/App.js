@@ -10,6 +10,8 @@ import Footer from "./components/Footer/Footer";
 import Projects from "./components/projects/Project";
 import { useContext,useState,useEffect } from "react";
 import { themeContext } from "./Context";
+import {ChakraProvider} from '@chakra-ui/react'
+
 import Github from "./components/Github";
 import PraciceNav from "./components/PraciceNav";
 function App() {
@@ -33,7 +35,8 @@ function App() {
         color: darkMode ? "white" : "",
       }}
     >
-      <div > <Navbar  handleClick={handleClick} boolean={boolean}/></div>
+      <div > 
+       <Navbar  handleClick={handleClick} boolean={boolean}/></div>
      
       <Intro />
       {/* Services pagee is About page */}

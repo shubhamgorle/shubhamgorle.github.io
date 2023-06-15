@@ -4,13 +4,10 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ThemeProvider } from './Context';
 
-import {ChakraProvider} from '@chakra-ui/react'
 ReactDOM.render(
-  <ChakraProvider>
   <ThemeProvider>
     <App />
-  </ThemeProvider>
-  </ChakraProvider>,
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

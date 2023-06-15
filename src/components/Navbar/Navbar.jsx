@@ -77,8 +77,8 @@ const Navbar = ({ handleClick, boolean }) => {
                 as={IconButton}
                 // aria-label='Options'
                 icon={<HamburgerIcon />}
-                variant='outline'
-                className="button"/>
+                
+               />
                
               <MenuList style={{color:darkMode ? 'black':"black"}}>
                 <MenuItem >

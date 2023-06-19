@@ -78,9 +78,9 @@ const Skills = () => {
     <>
     <div className="skill1" id='skills'>
          <div style={{height:"40px"}}></div>
-      <span style={{ color: darkMode ? "white" : "" ,textAlign:"center"}}  id='skillspan'>Skills</span>
-      <div className="blur t-blur1" style={{ background: "var(--purple)"}}></div>
-      <div className="blur t-blur2" style={{ background: "skyblue" }}></div> 
+         <div id='skill_div'>
+      <span style={{ color: darkMode ? "white" : "" ,textAlign:"center"}}  id='skillspan'>Skills</span></div>
+    
       <div style={{height:"80px"}}></div>
           <Container id='skills'>
         <div className='skillsContainer'>
@@ -97,9 +97,9 @@ const Skills = () => {
 
     <div className="skill1" id='skills'>
          <div style={{height:"40px"}}></div>
-      <span style={{ color: darkMode ? "white" : "" ,textAlign:"center"}}  id='skillspan'>Tools</span>
-      <div className="blur t-blur1" style={{ background: "var(--purple)"}}></div>
-      <div className="blur t-blur2" style={{ background: "skyblue" }}></div> 
+         <div className='skill_div'>
+      <span style={{ color: darkMode ? "white" : "" ,textAlign:"center"}}  id='skillspan'>Tools</span></div>
+     
       <div style={{height:"80px"}}></div>
           <Container id='skills'>
         <div className='skillsContainer'>

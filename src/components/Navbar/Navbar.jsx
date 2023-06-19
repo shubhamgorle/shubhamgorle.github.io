@@ -14,10 +14,10 @@ import {
   MenuItem,
   IconButton,
 
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
+  // MenuItemOption,
+  // MenuGroup,
+  // MenuOptionGroup,
+  // MenuDivider,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 const Navbar = ({ handleClick, boolean }) => {
@@ -28,7 +28,7 @@ const Navbar = ({ handleClick, boolean }) => {
   }
   return (
 
-    <div id="nav-menu" className={darkMode ? 'darknavbar' : 'lightnavbar'} style={{ position: 'fixed', top: '0', zIndex: '10', width: "91%" }}>
+    <div id="nav-menu" className={darkMode ? 'darknavbar' : 'lightnavbar'} style={{ position: 'fixed', top: '0', zIndex: '10', width: "91%"}}>
       <div className="n-wrapper" id="Navbar">
         {/* left */}
         <div className="n-left">
@@ -68,7 +68,7 @@ const Navbar = ({ handleClick, boolean }) => {
               </li>
             </ul>
           </div>
-          <a href={resume} download style={{ width: "6rem", padding: '-6rem -2rem' }} onClick={handleResumeLink} >
+          <a href={resume} download style={{ width: "6rem", padding: '-6rem -2rem' }} onClick={handleResumeLink} id="disable_resume">
             <button className="button">Resume</button>
           </a>
           <div id="hamburger_icon">
@@ -77,7 +77,6 @@ const Navbar = ({ handleClick, boolean }) => {
                 as={IconButton}
                 // aria-label='Options'
                 icon={<HamburgerIcon />}
-                
                />
                
               <MenuList style={{color:darkMode ? 'black':"black"}}>
@@ -106,6 +105,9 @@ const Navbar = ({ handleClick, boolean }) => {
                     Contact
                   </Link>
                 </MenuItem>
+                <MenuItem><a href={resume} download style={{ textDecoration:'none',color:'black' }} onClick={handleResumeLink} >
+            Resume
+          </a></MenuItem>
               </MenuList>
             </Menu></div>
         </div>

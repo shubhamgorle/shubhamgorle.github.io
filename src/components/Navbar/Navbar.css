@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
   top: 0;
 }
 
@@ -19,6 +18,7 @@
   font-size: 1.3rem;
   font-weight: bold;
 }
+
 .n-right {
   flex: 1;
   display: flex;
@@ -30,6 +30,7 @@
 .n-list {
   flex: 10;
 }
+
 .n-list > ul {
   display: flex;
   gap: 2rem;
@@ -45,136 +46,32 @@
   flex: 2;
   margin-right: 40px;
 }
-#nav-menu{
+
+#nav-menu {
   position: sticky;
   top: 0;
   z-index: 10;
   padding: 5px 5px;
 }
-.darknavbar{
+
+.darknavbar {
   background-color: black;
 }
-/* .hide{
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-} */
+
 @media screen and (max-width: 480px) {
   .n-list {
     display: none;
   }
-  #hamburger_iconr{
+  #hamburger_icon {
     display: block;
   }
-}
-@media screen and (min-width:820px){
-  #hamburger_icon{
+  #disable_resume{
     display: none;
   }
 }
-/* #nav-menu{
-  background: var(--brown-red);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  align-items: center;
-  height: auto;
-  padding: 10px 15px;
-}
-#logo-nav{
-  flex-grow: 1;
-  margin:0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#logo-nav h1{
-  font-weight: 700;
-  color: var(--light-red);
-  font-size: 30px;
-}
-.contact-button.resume-button{
-  padding: 7px;
-  font-size: 20px;
-  margin: 0;
-  align-self: flex-end;
-  border:none;
-}
-.ham-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ham{
-  font-size: 25px;
-  margin: 0 0 0 10px;
-  width: 30px;
-  text-align: center;
-  transition: all .5s;
-}
-ham i{
-  font-size: 25px;
-}
-#nav-menu ul{
-  font-size: 20px;
-  text-align: center;
-  transition: all .3s;
-} */
-/* .hide{
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-}
-.display-none{
-  display: none;
-}
-#nav-menu li{
-  margin: 30px 10px;
-  list-style: none;
-  cursor: pointer;
-  transition: all .4s;
-  padding: 7px;
-}
-#nav-menu li:hover{
-  color: var(--light-red);
-}
-.first-btn{
-  display: inline-block;
-}
-.second-btn{
-  display: none;
-} */
-/* @media screen and (min-width:800px){
-  .first-btn{
+
+@media screen and (min-width: 820px) {
+  #hamburger_icon {
     display: none;
   }
-  .second-btn{
-    display: inline-block;
-  }
-  .resume-button.second-btn{
-    margin: auto 0;
-  }
-  #nav-menu{
-    display: flex;
-  }
-  #nav-menu li{
-    margin: 0 10px;
-  }
-  #logo-nav{
-    flex-grow: 1;
-    text-align: left; 
-    margin-bottom: 0;
-  }
-  #nav-menu ul{
-    display: flex;
-    margin-bottom: 0;
-  }
-  .hide{
-    height: auto;
-    opacity: 1;
-  }
-  .ham{
-    display: none;
-  }
-} */
-/* Navbar */
+}

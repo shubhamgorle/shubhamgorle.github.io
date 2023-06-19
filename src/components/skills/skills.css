@@ -5,5 +5,14 @@
 #skillspan{
     font-size: 2.5rem;
     font-weight: bold;
-    margin-left: 45%;
+}
+#skill_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

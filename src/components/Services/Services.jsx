@@ -14,7 +14,7 @@ const Services = () => {
     window.open(Resume, "_blank")
   }
   return (
-    <div  id="about" class="about section">
+    <div  id="about" class="about section" >
     <div className="services" id="services about section">
       {/* left side */}
       <div className="awesome">

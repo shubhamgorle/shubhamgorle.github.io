@@ -6,7 +6,7 @@ import Facebook from "@iconscout/react-unicons/icons/uil-linkedin";
 import Gitub from "@iconscout/react-unicons/icons/uil-github";
 import Phone from "@iconscout/react-unicons/icons/uil-phone";
 import linkedin from '../../img/linkedin.png'
-
+import "../commen.css"
 const Footer = () => {
   return (
     <div className="footer">

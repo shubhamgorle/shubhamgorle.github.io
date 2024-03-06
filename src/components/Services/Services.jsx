@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Services.css";
-
+import "../commen.css"
 import { themeContext } from "../../Context";
 
 import Resume from './Shubham-Gorle-Resume.pdf';

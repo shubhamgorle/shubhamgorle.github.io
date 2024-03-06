@@ -1,0 +1,52 @@
+/* @media screen and (max-width: 480px) {
+    .Intro {
+      padding: 0.5rem 1rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #about {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    #skills {
+      padding: 0.5rem 1rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #projects {
+      padding: 0.5rem 1rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #newgithubid {
+      padding: 0.5rem 1rem;
+    }
+  }@media screen and (max-width: 480px) {
+    #contact {
+      padding: 0.5rem 1rem;
+    }
+  } */
+  @media screen and (max-width: 480px) {
+    .footer{
+      padding: 0.5rem 1rem;
+    text-align: center;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #about {
+      padding: 0.5rem 1rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #contact {
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+  } 
+  @media screen and (max-width: 480px) {
+    .Intro {
+      padding: 0.5rem 1rem;
+    }
+  }

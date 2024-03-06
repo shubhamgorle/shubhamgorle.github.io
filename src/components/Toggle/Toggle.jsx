@@ -13,7 +13,7 @@ const Toggle = () => {
   };
   return (
     <div className="toggle" onClick={handleClick}>
-      <Moon />
+      <Moon/>
       <Sun />
       {/*                              toggle.css mein left ki property aik assign hy ussy delete
                                           krna hy pehly */}

@@ -1,3 +1,4 @@
+import "./project.css"
 import React from 'react';
 import styled from 'styled-components';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -7,6 +8,7 @@ import expendia from '../../img/expendia.png'
 import koo from '../../img/kooApp.png'
 import { useContext } from 'react'
 import { themeContext } from '../../Context';
+import "../commen.css"
 const Projects = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;

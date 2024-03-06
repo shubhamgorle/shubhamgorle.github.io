@@ -28,7 +28,7 @@ const Navbar = ({ handleClick, boolean }) => {
   }
   return (
 
-    <div id="nav-menu" className={darkMode ? 'darknavbar' : 'lightnavbar'} style={{ position: 'fixed', top: '0', zIndex: '10', width: "91%"}}>
+    <div id="nav-menu" className={darkMode ? 'darknavbar' : 'lightnavbar'} style={{ position: 'fixed', top: '0', zIndex: '10', width: "100%"}}>
       <div className="n-wrapper" id="Navbar">
         {/* left */}
         <div className="n-left">
@@ -37,10 +37,10 @@ const Navbar = ({ handleClick, boolean }) => {
         </div>
         {/* right */}
         <div className="n-right" >
-          <div className="n-list">
+          <div className="n-list" id={darkMode ? "darkkk" : "lighttt"}>
             <ul style={{ listStyleType: "none" }}>
               <li className="nav-link home">
-                <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+                <Link activeClass="active" to="home" spy={true} smooth={true}>
                   Home
                 </Link>
               </li>
@@ -81,12 +81,12 @@ const Navbar = ({ handleClick, boolean }) => {
                
               <MenuList style={{color:darkMode ? 'black':"black"}}>
                 <MenuItem >
-                  <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+                  <Link activeClass="active" to="home" spy={true} smooth={true} >
                     Home
                   </Link>
                 </MenuItem>
                 <MenuItem >
-                  <Link to="services" spy={true} smooth={true}>
+                  <Link to="services" spy={true} smooth={true} >
                     About
                   </Link>
                 </MenuItem>

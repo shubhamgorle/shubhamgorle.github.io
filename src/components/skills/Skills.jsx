@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 // import html from '../Resources/Images/LanguageImages/html5.png'
+import "../commen.css"
 import html from '../../img/html5.png'
 import css from '../../img/css3.png'
 import js from '../../img/js.png'

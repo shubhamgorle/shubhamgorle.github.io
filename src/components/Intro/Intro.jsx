@@ -13,6 +13,7 @@ import userphoto from '../../img/userphoto1.png'
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import "../commen.css"
 // import shubham from '../../img/result.png'
 const Intro = () => {
   // Transition
@@ -51,22 +52,22 @@ const Intro = () => {
         <img src={userphoto} alt=""  class="home-img"/>
         {/* <img src={shubham} alt="" /> */}
         {/* animation */}
-        <motion.img
+        {/* <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
           src={glassesimoji}
           alt=""
-        />
+        /> */}
 
-        <motion.div
+        {/* <motion.div
           initial={{ top: "-4%", left: "74%" }}
           whileInView={{ left: "68%" }}
           transition={transition}
           className="floating-div"
         >
           <FloatinDiv img={crown} text1="Full Stack" text2="Developer" />
-        </motion.div>
+        </motion.div> */}
 
         {/* animation */}
         <motion.div

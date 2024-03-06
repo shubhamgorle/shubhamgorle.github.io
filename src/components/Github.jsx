@@ -1,3 +1,5 @@
+import "./Github.css"
+import "./commen.css"
 import React from 'react'
 import styled from 'styled-components';
 import GithubCalendar from 'react-github-calendar'
@@ -7,7 +9,7 @@ const Github = () => {
     const theme = useContext(themeContext);
       const darkMode = theme.state.darkMode;
     return (
-        <MainContainer style={{ marginTop: "-20px" }}>
+        <MainContainer style={{ marginTop: "-20px" }} id="newgithubid">
              {/* font-size: 2.5rem;
     font-weight: bold;
     margin-left: 45%; */}

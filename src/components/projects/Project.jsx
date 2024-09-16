@@ -5,7 +5,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import StreamIcon from '@mui/icons-material/Stream';
 import shop from '../../img/shop.png'
 import expendia from '../../img/expendia.png'
-import koo from '../../img/kooApp.png'
+// import koo from '../../img/kooApp.png'
+import ecom from "../../img/ecom.png"
 import { useContext } from 'react'
 import { themeContext } from '../../Context';
 import "../commen.css"
@@ -13,6 +14,16 @@ const Projects = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     const projects = [
+        {
+            id: 6,
+            title: 'MERN Stack E-Commerce Website',
+            img: ecom,
+            desc: 'Built a secure e-commerce platform with MERN stack, including user authentication, dynamic cart, payment gateway and admin features.',
+            worked: 'This is solo project, built in 40 days.',
+            githubLink: 'https://github.com/shubhamgorle/E-commerse-fullstack-App',
+            deployedLink: 'https://drive.google.com/file/d/1gAxsWACRlZAqGkqaROzrW5gb18pYGLS9/view',
+            tags: ['React', 'Redux', 'Material-UI', 'CSS', 'Node.js', 'Express', 'MongoDB', 'Cloudinary', 'JWT', 'Nodemailer', 'Stripe']
+        },
     {
             id: 6,
             title: 'Shop.com',
@@ -32,16 +43,16 @@ const Projects = () => {
             deployedLink: 'http://effulgent-crostata-f624a5.netlify.app',
             tags:  [ "HTML", "CSS","JavaScript","Bootstrap"]
         },
-        {
-            id: 4,
-            title: 'Koo-Clone',
-            img: koo,
-            desc: 'Koo is a microblogging platform that is popular in India. It allows users to post short updates, similar to Twitter.',
-            worked: 'A collaborative project, built in 4 days by a team of 4 developers.',
-            githubLink: 'https://github.com/shubhamgorle/kooapp_clonee',
-            deployedLink: 'https://koonew.netlify.app/',
-            tags:  ["React", "Redux", "JavaScript", "ChakraUi", "CSS"]
-        }
+        // {
+        //     id: 4,
+        //     title: 'Koo-Clone',
+        //     img: koo,
+        //     desc: 'Koo is a microblogging platform that is popular in India. It allows users to post short updates, similar to Twitter.',
+        //     worked: 'A collaborative project, built in 4 days by a team of 4 developers.',
+        //     githubLink: 'https://github.com/shubhamgorle/kooapp_clonee',
+        //     deployedLink: 'https://koonew.netlify.app/',
+        //     tags:  ["React", "Redux", "JavaScript", "ChakraUi", "CSS"]
+        // }
     ]
    
     return (
